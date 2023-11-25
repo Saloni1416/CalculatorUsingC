@@ -1,0 +1,46 @@
+using System;
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ 
+			int sum=0, difference=0,product=0,quotient=0,remainder=0;
+			double powerof=0;
+			int num1 = 10;
+			int num2 = 4;
+			switch("**") 
+			{
+	
+				case "+":
+						sum=num1+num2;
+						Console.WriteLine("Sum of "+num1+", "+num2 +" = "+sum);
+						break;
+				case "-":
+						difference=num1-num2;
+						Console.WriteLine("difference of "+num1+", "+num2 +" = "+difference);
+						break;
+				case "*":
+						product=num1*num2;
+						Console.WriteLine("product of "+num1+", "+num2 +" = "+product);
+						break;
+				case "/":
+						quotient=num1/num2;
+						Console.WriteLine("quotient of "+num1+", "+num2 +" = "+quotient);
+						break;
+			case "%":
+						remainder=num1%num2;
+						Console.WriteLine("remainder of "+num1+", "+num2 +" = "+remainder);
+						break;
+			case "**":
+						powerof =Math.Pow(num1,num2);
+						Console.WriteLine(num1+" to the power of  "+num2 +" = "+powerof);
+				 		break;
+				default:
+					Console.WriteLine("invalid number");
+					break;
+			}
+		} 
+	}
+
+}
